@@ -5,8 +5,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+      
 
-   
     
     .text-content {
       width: 48%;
@@ -21,22 +21,35 @@
         border-radius: 10px;
       }
     }
-  }
+      @media @phone {
+      flex-direction: column;
+      }
+}
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+
+    @media @phone {
+      flex-direction: column-reverse;
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+     
+      @media @phone {
+        width: 80%;
+      }
     }
   }
+}
 
   .content-destination {
     width: 75%;
