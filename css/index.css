@@ -189,7 +189,7 @@ img {
   color: black;
   font-size: 1.5rem;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .header-wrapper header {
     flex-direction: column;
   }
