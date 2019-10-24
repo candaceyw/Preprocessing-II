@@ -169,7 +169,7 @@ img {
   margin: 0 auto;
 }
 .header-wrapper {
-  border-bottom: 2px dashed lightgray;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .header-wrapper header {
   max-width: 800px;
@@ -254,4 +254,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero-wrapper .welcome {
+  margin-top: 20px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.hero-wrapper .welcome h1 {
+  margin-bottom: 10px;
+}
+.hero-wrapper .welcome p {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
