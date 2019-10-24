@@ -2,23 +2,31 @@
 
 .header-wrapper {
     border-bottom: 2px dashed @navigation-border;
-
+   
 
     header {
         .margin(800px, 0 auto);
         height: 80px;
         .displayflex(space-between, center);
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            width: 50%;
-        
-            a {
-                text-decoration: none;
-                color: black;
-                font-size: 1.5rem;
+            nav {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+            
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.5rem;
+                }
             }
+        @media @phone {
+             flex-direction: column;
+             
+                nav a{font-size: 1.8rem;
+                    justify-content: space-between;
+                    width: 100%;
+                }
         }
     }
 }

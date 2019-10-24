@@ -189,6 +189,16 @@ img {
   color: black;
   font-size: 1.5rem;
 }
+@media (min-width: 500px) {
+  .header-wrapper header {
+    flex-direction: column;
+  }
+  .header-wrapper header nav a {
+    font-size: 1.8rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -265,4 +275,14 @@ img {
 .hero-wrapper .welcome p {
   margin-bottom: 10px;
   line-height: 1.6;
+}
+.btn {
+  padding: 4%;
+  font-size: 1.5rem;
+  width: 80%;
+  color: white;
+  background-color: #008080;
+  height: 35px;
+  border-radius: 10px;
+  text-align: center;
 }
