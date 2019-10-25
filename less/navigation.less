@@ -13,6 +13,10 @@
                 display: flex;
                 justify-content: space-between;
                 width: 50%;
+
+                @media @phone {
+                    width: 80%;
+                }
             
                 a {
                     text-decoration: none;
@@ -22,11 +26,8 @@
             }
         @media @phone {
              flex-direction: column;
+             margin: 10px 0px;
              
-                nav a{font-size: 1.8rem;
-                    justify-content: space-between;
-                    width: 100%;
-                }
         }
     }
 }
