@@ -211,6 +211,76 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2% 20%;
+  background: white;
+  border-radius: 10px;
+  font-size: 2rem;
+  line-height: 2;
+  align-items: center;
+}
+.contactForm input {
+  width: 40%;
+  height: 35px;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .contactForm input {
+    border: 1px solid black;
+  }
+}
+.contactForm p {
+  font-size: 1.8rem;
+}
+.contactForm .btn {
+  width: 30%;
+  padding: 15px 32px;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 60px;
+  font-size: 16px;
+}
+.contactForm textarea {
+  width: 70%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+.contactForm .package input[type='checkbox'] {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+}
+.contactForm .package input[type='checkbox']:checked {
+  background: #abd;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .contactForm {
+    margin: 5%;
+  }
+  .contactForm .contactForm input {
+    border: 1px solid black;
+  }
+  .contactForm h1 {
+    text-align: center;
+    line-height: 1;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .contactForm h1 {
+    margin-top: 10px;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -298,6 +368,7 @@ img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 @media (max-width: 500px) {
   .home .content-pick {

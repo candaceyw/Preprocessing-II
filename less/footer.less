@@ -10,3 +10,91 @@
     padding: 20px;
   }
 }
+
+.contactForm {
+
+  
+  .displayflex(center, center);
+  flex-direction: column;
+ margin: 2% 20%;
+  background: white;
+  border-radius: 10px;
+  font-size: 2rem;
+  line-height: 2;
+  align-items: center;
+
+  input {
+    width: 40%;
+    height: 35px;
+    align-items: center;
+
+    @media @phone {
+        border: 1px solid black;
+  
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 30%;
+    padding: 15px 32px;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 60px;
+    font-size: 16px;
+
+  }
+  
+  textarea {
+    width: 70%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  }
+
+  .package {
+  
+
+  input[type='checkbox'] {
+    
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+   
+    
+}
+input[type='checkbox']:checked {
+  background: #abd;
+  text-align: center;
+
+}
+}
+  @media @phone {
+
+    .contactForm input {
+      border: 1px solid black;
+
+  }
+    margin: 5%;
+
+    h1 {
+      text-align: center;
+      line-height: 1;
+      @media @phone {
+        margin-top: 10px;
+  
+    }
+    }
+
+   
+}
+}
