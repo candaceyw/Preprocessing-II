@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+.header-wrapper {
+    border-bottom: 2px dashed @navigation-border;
+   
+
+    header {
+        .margin(800px, 0 auto);
+        height: 80px;
+        .displayflex(space-between, center);
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+
+                @media @phone {
+                    width: 80%;
+                }
+            
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.5rem;
+                }
+            }
+        @media @phone {
+             flex-direction: column;
+             margin: 10px 0px;
+             
+        }
+    }
+}
+
